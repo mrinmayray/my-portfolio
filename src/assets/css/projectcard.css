@@ -1,0 +1,8 @@
+.custom-link {
+    color: white; /* Set the default color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .custom-link:hover {
+    color: black; /* Set color for hover */
+  }

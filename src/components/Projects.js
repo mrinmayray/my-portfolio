@@ -11,9 +11,10 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "iDogs - PetAdoption",
+      description: "MERN Stack Project",
       imgUrl: projImg1,
+      link: "https://idogs.netlify.app/",
     },
     {
       title: "Business Startup",
