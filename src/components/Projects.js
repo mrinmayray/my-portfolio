@@ -52,7 +52,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>I am proud to share some of the projects that I have worked on in the past. These projects showcase my skills and interests in various domains such as web development, data analysis, and machine learning. You can access these projects by clicking on the links below. I hope you will find them interesting and informative.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -81,10 +81,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>This is the part where I'm supposed to show you something amazing, but unfortunately, I have nothing to offer you right now. I know, I know, you're probably thinking, "What a waste of time!" or "How unprofessional!" or "Is this some kind of joke?" Well, it's not a joke, but it is kind of funny, don't you think? I mean, here you are, expecting to see some brilliant piece of work, and all you get is this lame excuse. Well, don't worry, I'm working on it. I promise. Soon, you'll be able to see the fruits of my labor. But for now, you'll have to settle for this placeholder text. Sorry about that.<br/> <br/>Please come back later😁.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <p>This is the part where I'm supposed to show you something amazing, but unfortunately, I have nothing to offer you right now. I know, I know, you're probably thinking, "What a waste of time!" or "How unprofessional!" or "Is this some kind of joke?" Well, it's not a joke, but it is kind of funny, don't you think? I mean, here you are, expecting to see some brilliant piece of work, and all you get is this lame excuse. Well, don't worry, I'm working on it. I promise. Soon, you'll be able to see the fruits of my labor. But for now, you'll have to settle for this placeholder text. Sorry about that.<br/> <br/>Please come back later😁.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
