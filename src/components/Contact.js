@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com'; // Updated import
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../assets/img/contact-img.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { toast, ToastContainer } from 'react-toastify';
@@ -10,18 +10,22 @@ import 'react-toastify/dist/ReactToastify.css';
 export const Contact = () => {
 
   const form = useRef();
+  const [sending, setSending] = useState(false); // Added sending state
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true); // Set sending state to true
 
     emailjs.sendForm('service_qfa96ma', 'template_2iqg144', form.current, 'qqEgltz7EgyEK34aX')
       .then((result) => {
         console.log(result.text);
         toast.success("Message Sent"); // Show success notification
         form.current.reset();
+        setSending(false); // Reset sending state to false after successful delivery
       }, (error) => {
         console.log(error.text);
         toast.error("Sending failed. Please try again!"); // Show error notification
+        setSending(false); // Reset sending state to false after failed delivery
       });
   };
 
@@ -57,7 +61,9 @@ export const Contact = () => {
                       </Col>
                       <Col size={12} className="px-1">
                         <textarea rows="6" placeholder="Message" name="message" required></textarea>
-                        <button type="submit" value="send"><span>Send</span></button>
+                        <button type="submit" value="send" disabled={sending}> {/* Disable button while sending */}
+                          <span>{sending ? "Sending..." : "Send"}</span>
+                        </button>
                       </Col>
                     </Row>
                   </form>
