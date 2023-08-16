@@ -28,6 +28,9 @@ export const Contact = () => {
         setSending(false); // Reset sending state to false after failed delivery
       });
   };
+  const toastOptions = {
+    position: window.innerWidth <= 768 ? 'top-center' : 'top-right', // Change position for small screens
+  };
 
   return (
     <section className="contact" id="connect">
@@ -71,8 +74,8 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
         </Row>
+        <ToastContainer position={toastOptions.position} /> {/* Add ToastContainer at the end */}
       </Container>
-      <ToastContainer /> {/* Add ToastContainer at the end */}
     </section>
   )
 }
