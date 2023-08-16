@@ -1,3 +1,10 @@
+@media screen and (max-width: 768px) {
+  .custom-toast {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
 /************ Custom Font ************/
 @font-face {
 	font-family: Centra;
