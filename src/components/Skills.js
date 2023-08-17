@@ -59,7 +59,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter60} alt="Image" />
-                                <h5>Programing Languages(C/C++/Python)</h5>
+                                <h5>C/C++/Python</h5>
                             </div>
                         </Carousel>
                     </div>
