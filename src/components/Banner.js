@@ -47,7 +47,7 @@ export const Banner = () => {
     }
   }
   const handleConnect = () => {
-    const linkURL = 'https://drive.google.com/file/d/1czRJpjEROtj1QR0SQ5bU1AgEy9gq4BpL/view';
+    const linkURL = 'https://drive.google.com/file/d/1jiayx8nIXM__l7o_V_u4yZGkbQW_uWRv/view?usp=drive_link';
 
     window.open(linkURL, '_blank');
   };
