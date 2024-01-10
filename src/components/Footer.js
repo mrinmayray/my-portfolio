@@ -31,7 +31,7 @@ export const Footer = () => {
             <a href="https://www.facebook.com/mjmrinmay/" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
             <a href="https://www.instagram.com/mrinmay__/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
             <a href="https://twitter.com/mrinmay__/" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="" /></a>
-            <a href="https://www.youtube.com/@unlockedmoney/" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="" /></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="" /></a>
           </div>
           <p /*onClick={handleCopyRightClick} style={{ cursor: 'pointer' }}*/>Copyright 2023. All Rights Reserved</p>
         </Col>
